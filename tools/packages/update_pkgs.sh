@@ -1,1 +1,3 @@
-pkg info -aoq
+#!/usr/local/bin/sh
+
+pkg info -aoq > ./packages.txt

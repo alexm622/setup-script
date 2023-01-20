@@ -63,6 +63,7 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;s" type="string" value="xfce4-screenshooter -rc"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Right" type="string" value="xdotool set_desktop --relative -- +1"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Left" type="string" value="xdotool set_desktop --relative -- -1"/>
+      <property name="&lt;Super&gt;l" type="string" value="xflock4"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

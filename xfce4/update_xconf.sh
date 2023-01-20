@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/sh
 
 
 #update xconf
