@@ -49,5 +49,5 @@ else
 	#add it to the path
 	ADD_ME="PATH=\$PATH:/usr/local/apache-maven/bin/"
 	$(export $ADD_ME)
-	echo "$ADD_ME" >> .zshrc
+	echo "$ADD_ME" >> ~/.zshrc
 fi
