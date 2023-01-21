@@ -1,11 +1,15 @@
 #!/usr/local/bin/bash
 
-select opt in "rust" "mvn" "java" "node"
+select opt in "rust" "mvn" "back"
 do
 	case $opt in
 		"rust")
-			echo test;;
+			echo rust
+			sh ./rust.sh;;
+		"mvn")
+			echo mvn
+			sh ./mvn.sh;;
 		*)
-			echo done;;
-esac
+			break;;
+	esac
 done
