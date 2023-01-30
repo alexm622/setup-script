@@ -6,11 +6,15 @@
 < ZSH_THEME="robbyrussell"
 ---
 > ZSH_THEME="passion"
-101a102,108
+101a102,112
 > 
 > alias cls="printf '\033c'"
 > alias sudo="doas"
 > 
 > #updates 
 > zstyle ':omz:update' mode auto
+> PATH=$PATH:/usr/local/apache-maven/bin/
+> JDK_HOME=/usr/local/openjdk17
+> JAVA_HOME=$JDK_HOME
 > 
+> [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

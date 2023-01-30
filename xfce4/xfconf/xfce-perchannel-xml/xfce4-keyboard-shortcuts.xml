@@ -39,8 +39,6 @@
       <property name="&lt;Super&gt;r" type="string" value="xfce4-appfinder -c">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
       <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
@@ -64,6 +62,8 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;Right" type="string" value="xdotool set_desktop --relative -- +1"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Left" type="string" value="xdotool set_desktop --relative -- -1"/>
       <property name="&lt;Super&gt;l" type="string" value="xflock4"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;BackSpace" type="string" value="albert toggle"/>
+      <property name="&lt;Super&gt;w" type="string" value="exo-open --launch WebBrowser"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
