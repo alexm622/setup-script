@@ -1,3 +1,18 @@
+#!/usr/local/bin/sh
+
+if [ $(whoami) != root ];
+then
+	echo "please elevate me :)"
+	C_DIR=$(pwd)
+	if which doas ;
+	then
+		doas sh "$C_DIR/neovim.sh"
+		return
+	else
+		sudo sh "$C_DIR/neovim.sh"
+		return
+	fi
+fi
 
 cd tmp
 mkdir neovim
@@ -24,6 +39,11 @@ LROCK=luarocks51 install
 $LROCK mpack
 $LROCK lpeg
 
+if which nvim;
+then
+	gmake uninstall
+fi
+
 gmake -j8 CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr/local/bin/nvim install
 
 #install nvim-qt
@@ -43,11 +63,17 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 
 cmake --build . -j8
 
-make -j4
+gmake -j4
+
+if which nvim-qt ;
+then
+	rm -rf $(which nvim-qt)
+fi
 
 cd bin
 
 cp nvim-qt /usr/local/bin/
 
+#pip nvim
 
-
+pip-3.9 install neovim
