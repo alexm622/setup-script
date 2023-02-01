@@ -7,7 +7,6 @@ sysutils/accountsservice
 x11-themes/adwaita-icon-theme
 x11/albert
 audio/alsa-lib
-audio/alsa-plugins
 multimedia/aom
 x11/appres
 devel/apr1
@@ -40,7 +39,6 @@ devel/cmake-doc
 devel/cmake-man
 graphics/colord
 sysutils/consolekit2
-security/cracklib
 print/cups
 ftp/curl
 security/cyrus-sasl2
@@ -124,7 +122,6 @@ print/ghostscript9-agpl-base
 graphics/giflib
 devel/git
 lang/gjs
-devel/glade
 devel/glib20
 net/glib-networking
 devel/gmake
@@ -459,7 +456,6 @@ devel/nspr
 security/nss
 audio/openal-soft
 graphics/openexr
-multimedia/openh264
 java/openjdk11
 java/openjdk17
 graphics/openjpeg
@@ -582,7 +578,6 @@ net/rclone
 net/rdesktop
 devel/re2
 devel/readline
-devel/librest
 security/rhash
 net/samba413
 devel/sdl12
@@ -616,7 +611,6 @@ devel/valgrind
 emulators/virtualbox-ose
 emulators/virtualbox-ose-kmod
 multimedia/vmaf
-editors/vscode
 x11-toolkits/vte3
 graphics/vulkan-headers
 graphics/wayland
