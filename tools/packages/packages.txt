@@ -121,7 +121,6 @@ devel/gh
 print/ghostscript9-agpl-base
 graphics/giflib
 devel/git
-lang/gjs
 devel/glib20
 net/glib-networking
 devel/gmake
@@ -613,6 +612,7 @@ emulators/virtualbox-ose-kmod
 multimedia/vmaf
 x11-toolkits/vte3
 graphics/vulkan-headers
+graphics/vulkan-loader
 graphics/wayland
 www/webkit2-gtk3
 graphics/webp
@@ -643,6 +643,7 @@ x11/xconsole
 x11-themes/xcursor-themes
 x11/xcursorgen
 devel/xdg-utils
+x11/xdotool
 x11/xdpyinfo
 x11/xdriinfo
 x11/xev
