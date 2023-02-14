@@ -1,7 +1,8 @@
 #!/usr/local/bin/bash
 
-select opt in "rust" "mvn" "R" "back"
-do
+function run () {
+	select opt in "rust" "mvn" "R" "back"
+	do
 	case $opt in
 		"rust")
 			echo rust
@@ -14,5 +15,14 @@ do
 			sh ./R.sh;;
 		*)
 			break;;
-	esac
-done
+		esac
+	done
+}
+
+function all (){
+		sh ./rust.sh
+		sh ./mvn.sh
+		sh ./R.sh
+		return
+}
+

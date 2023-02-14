@@ -1,5 +1,31 @@
 #!/bin/zsh
 
+function all () {
+	echo installing all
+	#first install packages
+	sh tools/packages/install.sh
+	
+	#and the essentials
+	sh low_level/copy_essentials.sh
+
+	#zsh
+	sh basic/omzsh/nvim-qt.sh
+	sh basic/omzsh/omzsh.sh
+	sh basic/omzsh/update_diff.sh
+
+
+	sh tools/neovim/neovim.sh
+	sh tools/nano.sh
+
+	bash -c "source sdks/install.bash; all"
+
+	#copy xfce4 config
+	rm -r ~/.config/xfce4/
+	cp -r xfce4/ ~/.config/xfce4
+	
+}
+
+
 repo_location="/home/$(whoami)/setup-script"
 
 if [[ $(pwd) != $repo_location ]];
@@ -38,4 +64,25 @@ fi
 
 #start installing stuff
 
-sh ./sdks/install.sh
+select opt in "sdk" "low_level" "basic" "xfce4" "tools" "all" "Quit"
+do
+	case $opt in
+		"sdk")
+			echo sdk
+			bash -c "source sdks/install.bash; run";;
+		"low_level")
+			echo low level;;
+		"basic")
+			echo basic;;
+		"xfce4")
+			echo xfce4;;
+			#do something
+		"tools")
+			echo tools;;
+		"all")
+			echo all
+			all ;;
+		*)
+			break;;
+	esac
+done
