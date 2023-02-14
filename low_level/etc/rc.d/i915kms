@@ -1,0 +1,15 @@
+#!/bin/sh
+
+. /etc/rc.subr
+
+name="i915kms"
+start_cmd="${name}_start"
+stop_cmd=":"
+
+i915kms_start()
+{
+	kldload /boot/modules/i915kms.ko
+}
+
+load_rc_config $name
+run_rc_command "$1"
