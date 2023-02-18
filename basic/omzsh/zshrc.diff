@@ -6,7 +6,7 @@
 < ZSH_THEME="robbyrussell"
 ---
 > ZSH_THEME="passion"
-101a102,112
+101a102,121
 > 
 > alias cls="printf '\033c'"
 > alias sudo="doas"
@@ -18,3 +18,12 @@
 > JAVA_HOME=$JDK_HOME
 > 
 > [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+> 
+> 
+> # Load Angular CLI autocompletion.
+> source <(ng completion script)
+> 
+> 
+> #brightness
+> export BRIGHTNESS=30000
+> xbrightness $BRIGHTNESS

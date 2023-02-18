@@ -8,6 +8,7 @@ x11-themes/adwaita-icon-theme
 x11/albert
 audio/alsa-lib
 multimedia/aom
+www/apache24
 x11/appres
 devel/apr1
 devel/argp-standalone
@@ -628,6 +629,7 @@ multimedia/x265
 x11/xauth
 x11/xbacklight
 x11/xbitmaps
+x11/xbrightness
 x11/xcalc
 x11/xcb-util
 x11/xcb-util-cursor

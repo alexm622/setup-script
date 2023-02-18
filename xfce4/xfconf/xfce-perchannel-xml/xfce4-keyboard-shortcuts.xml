@@ -64,6 +64,12 @@
       <property name="&lt;Super&gt;l" type="string" value="xflock4"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;BackSpace" type="string" value="albert toggle"/>
       <property name="&lt;Super&gt;w" type="string" value="exo-open --launch WebBrowser"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;exclam" type="string" value="xdotool set_desktop 0"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;at" type="string" value="xdotool set_desktop 1"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;numbersign" type="string" value="xdotool set_desktop 2"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;dollar" type="string" value="xdotool set_desktop 3"/>
+      <property name="&lt;Super&gt;Up" type="string" value="/usr/home/alex/scripts/brightness/plus.sh"/>
+      <property name="&lt;Super&gt;Down" type="string" value="/usr/home/alex/scripts/brightness/minus.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
