@@ -2,4 +2,5 @@
 
 
 #update awesomewm
-cp -r ~/.config/awesome ~/setup-script/configs/awesome/
+mkdir awesome
+cp ~/.config/awesome/* ~/setup-script/configs/awesome/awesome/

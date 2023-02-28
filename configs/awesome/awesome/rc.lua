@@ -18,6 +18,8 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
+local lain = require('lain')
+
 local cyclefocus = require('cyclefocus')
 
 local battery_widget = require('awesome-battery_widget')
@@ -122,6 +124,43 @@ local my_battery_widget = battery_widget {
     device_path = '/org/freedesktop/UPower/devices/battery_devxbatteryx0',
     use_display_device = true,
     widget_template = wibox.widget.textbox
+}
+
+-- network
+local wifi_icon = wibox.widget.imagebox()
+local eth_icon = wibox.widget.imagebox()
+local net = lain.widget.net {
+    notify = "off",
+    wifi_state = "on",
+    eth_state = "on",
+    settings = function()
+        local eth0 = net_now.devices.em0
+        if eth0 then
+            if eth0.ethernet then
+                eth_icon:set_image(ethernet_icon_filename)
+            else
+                eth_icon:set_image()
+            end
+        end
+
+        local wlan0 = net_now.devices.wlan1
+        if wlan0 then
+            if wlan0.wifi then
+                local signal = wlan0.signal
+                if signal < -83 then
+                    wifi_icon:set_image(wifi_weak_filename)
+                elseif signal < -70 then
+                    wifi_icon:set_image(wifi_mid_filename)
+                elseif signal < -53 then
+                    wifi_icon:set_image(wifi_good_filename)
+                elseif signal >= -53 then
+                    wifi_icon:set_image(wifi_great_filename)
+                end
+            else
+                wifi_icon:set_image()
+            end
+        end
+    end
 }
 
 -- When UPower updates the battery status, the widget is notified
@@ -233,6 +272,9 @@ awful.screen.connect_for_each_screen(function(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+            wifi_icon,
+            eth_icon,
+            net,
             my_battery_widget,
             mykeyboardlayout,
             wibox.widget.systray(),
