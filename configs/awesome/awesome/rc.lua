@@ -381,6 +381,10 @@ end),
     awful.key({ modkey, "Shift"}, "Up", function() awful.util.spawn("sh /usr/home/alex/scripts/brightness/plus.sh") end),
     awful.key({ modkey, "Shift"}, "Down", function() awful.util.spawn("sh /usr/home/alex/scripts/brightness/minus.sh") end),
 
+    -- Screenshot
+    awful.key({ modkey, "Shift"}, "s", function() awful.util.spawn("xfce4-screenshooter -rc") end),
+    awful.key({modkey, }, "Print", function () awful.util.spawn("xfce4-screenshooter -r") end),
+
 
     -- Prompt
     awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
