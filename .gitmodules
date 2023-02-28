@@ -1,0 +1,9 @@
+[submodule "configs/awesome/awesome/awesome-battery_widget"]
+	path = configs/awesome/awesome/awesome-battery_widget
+	url = https://github.com/Aire-One/awesome-battery_widget
+[submodule "configs/awesome/awesome/awesome-cyclefocus"]
+	path = configs/awesome/awesome/awesome-cyclefocus
+	url = https://github.com/blueyed/awesome-cyclefocus/
+[submodule "configs/awesome/awesome/lain"]
+	path = configs/awesome/awesome/lain
+	url = https://github.com/lcpz/lain.git
