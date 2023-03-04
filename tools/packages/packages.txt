@@ -5,6 +5,7 @@ editors/abiword
 devel/abseil
 sysutils/accountsservice
 x11-themes/adwaita-icon-theme
+x11/alacritty
 x11/albert
 audio/alsa-lib
 multimedia/aom
@@ -16,6 +17,7 @@ net/asio
 accessibility/at-spi2-atk
 accessibility/at-spi2-core
 accessibility/atk
+accessibility/atkmm
 net/avahi-app
 x11-wm/awesome
 shells/bash
@@ -33,6 +35,7 @@ sysutils/bsdisks
 dns/c-ares
 security/ca_root_nss
 graphics/cairo
+graphics/cairomm
 devel/ccls
 devel/cmake
 devel/cmake-core
@@ -50,6 +53,7 @@ devel/dbus-glib
 devel/dconf
 x11-fonts/dejavu
 devel/desktop-file-utils
+sysutils/dmidecode
 security/doas
 sysutils/docker
 sysutils/docker-compose
@@ -107,8 +111,10 @@ converters/fribidi
 devel/gamin
 sysutils/garcon
 lang/gcc
+lang/gcc10
 lang/gcc11
 lang/gcc12
+lang/gcc8
 security/gcr
 devel/gdb
 databases/gdbm
@@ -124,8 +130,11 @@ graphics/giflib
 devel/git
 devel/glib20
 net/glib-networking
+devel/glibmm
 devel/gmake
 math/gmp
+misc/gnome-icon-theme
+x11-themes/gnome-icon-theme-symbolic
 sysutils/gnome_subr
 security/gnupg
 security/gnutls
@@ -235,6 +244,7 @@ x11-themes/gtk-murrine-engine
 graphics/gtk-update-icon-cache
 x11-toolkits/gtk20
 x11-toolkits/gtk30
+x11-toolkits/gtkmm24
 x11-toolkits/gtksourceview3
 devel/gvfs
 print/harfbuzz
@@ -242,7 +252,9 @@ print/harfbuzz-icu
 misc/hicolor-icon-theme
 devel/highway
 textproc/hunspell
+sysutils/hw-probe
 misc/hwdata
+sysutils/hwstat
 textproc/hyphen
 x11/iceauth
 devel/icu
@@ -299,9 +311,12 @@ security/libargon2
 multimedia/libass
 security/libassuan
 multimedia/libbluray
+devel/libcbor
 audio/libcddb
 sysutils/libcdio
 sysutils/libcdio-paranoia
+devel/libcjson
+devel/libconfig
 devel/libdaemon
 devel/libdbusmenu
 archivers/libdeflate
@@ -310,6 +325,7 @@ graphics/libdrm
 devel/libedit
 devel/libepoll-shim
 graphics/libepoxy
+devel/libev
 devel/libevdev
 devel/libevent
 graphics/libexif
@@ -356,6 +372,7 @@ devel/libpthread-stubs
 graphics/libqrencode
 graphics/librsvg2-rust
 security/libsecret
+devel/libsigc++20
 net-mgmt/libsmi
 audio/libsndfile
 devel/libsoup
@@ -393,6 +410,7 @@ x11/libxfce4util
 x11/libxkbcommon
 x11/libxkbfile
 x11/libxklavier
+textproc/libxml++26
 textproc/libxml2
 x11/libxshmfence
 textproc/libxslt
@@ -402,7 +420,10 @@ x11/lightdm-gtk-greeter
 devel/llvm15
 devel/llvm90
 databases/lmdb
+sysutils/lsblk
+sysutils/lscpu
 sysutils/lsof
+devel/lua-language-server
 lang/lua51
 devel/lua-luarocks
 lang/lua52
@@ -430,6 +451,7 @@ devel/ncurses
 sysutils/neofetch
 security/nettle
 devel/ninja
+sysutils/nitrogen
 www/node
 x11-fonts/noto
 x11-fonts/noto-basic
@@ -485,11 +507,13 @@ devel/p5-TimeDate
 net/p5-URI
 security/pam_helper
 x11-toolkits/pango
+x11-toolkits/pangomm
 misc/pciids
 devel/pcre
 devel/pcre2
 devel/pcsc-lite
 lang/perl5.32
+x11-wm/picom
 security/pinentry
 security/pinentry-curses
 x11/pixman
@@ -502,6 +526,7 @@ graphics/poppler-glib
 devel/popt
 ports-mgmt/portdowngrade
 devel/protobuf
+print/psutils
 audio/pulseaudio
 audio/pulseaudio-module-xrdp
 sysutils/pv
@@ -585,6 +610,7 @@ www/serf
 x11/sessreg
 x11/setxkbmap
 misc/shared-mime-info
+sysutils/smartmontools
 x11/smproxy
 archivers/snappy
 textproc/source-highlight
@@ -595,6 +621,7 @@ databases/sqlite3
 x11/startup-notification
 devel/subversion
 multimedia/svt-av1
+x11/tabbed
 devel/talloc
 lang/tcl86
 databases/tdb
@@ -604,6 +631,7 @@ graphics/tiff
 x11-toolkits/tk86
 devel/tree-sitter
 x11-wm/twm
+textproc/uchardet
 devel/unibilium
 sysutils/upower
 textproc/utf8proc
@@ -613,7 +641,6 @@ emulators/virtualbox-ose-kmod
 multimedia/vmaf
 x11-toolkits/vte3
 graphics/vulkan-headers
-graphics/vulkan-loader
 graphics/wayland
 www/webkit2-gtk3
 graphics/webp
