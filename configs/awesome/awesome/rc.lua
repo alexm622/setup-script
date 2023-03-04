@@ -14,6 +14,24 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
+
+-- startup apps
+
+do
+  local cmds =
+  {
+    "bash ~/.config/awesome/networkmgr.sh",
+    "xfce4-screensaver",
+    "albert",
+    "picom --config ~/.config/picom/picom.conf"
+  }
+
+  for _,i in pairs(cmds) do
+    awful.util.spawn(i)
+  end
+end
+
+
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -52,7 +70,6 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
-
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
 editor = os.getenv("EDITOR") or "nano"
@@ -85,8 +102,6 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.se,
 }
 -- }}}
-
-
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
@@ -124,43 +139,6 @@ local my_battery_widget = battery_widget {
     device_path = '/org/freedesktop/UPower/devices/battery_devxbatteryx0',
     use_display_device = true,
     widget_template = wibox.widget.textbox
-}
-
--- network
-local wifi_icon = wibox.widget.imagebox()
-local eth_icon = wibox.widget.imagebox()
-local net = lain.widget.net {
-    notify = "off",
-    wifi_state = "on",
-    eth_state = "on",
-    settings = function()
-        local eth0 = net_now.devices.em0
-        if eth0 then
-            if eth0.ethernet then
-                eth_icon:set_image(ethernet_icon_filename)
-            else
-                eth_icon:set_image()
-            end
-        end
-
-        local wlan0 = net_now.devices.wlan1
-        if wlan0 then
-            if wlan0.wifi then
-                local signal = wlan0.signal
-                if signal < -83 then
-                    wifi_icon:set_image(wifi_weak_filename)
-                elseif signal < -70 then
-                    wifi_icon:set_image(wifi_mid_filename)
-                elseif signal < -53 then
-                    wifi_icon:set_image(wifi_good_filename)
-                elseif signal >= -53 then
-                    wifi_icon:set_image(wifi_great_filename)
-                end
-            else
-                wifi_icon:set_image()
-            end
-        end
-    end
 }
 
 -- When UPower updates the battery status, the widget is notified
@@ -384,6 +362,12 @@ end),
     -- Screenshot
     awful.key({ modkey, "Shift"}, "s", function() awful.util.spawn("xfce4-screenshooter -rc") end),
     awful.key({modkey, }, "Print", function () awful.util.spawn("xfce4-screenshooter -r") end),
+    awful.key({}, "Print", function () awful.util.spawn("xfce4-screenshooter -fc") end),
+    awful.key({modkey, "Shift"}, "Print", function () awful.util.spawn("xfce4-screenshooter -f") end),
+
+
+    -- locking
+    awful.key({modkey, }, "l", function () awful.util.spawn("xflock4") end),
 
 
     -- Prompt
@@ -639,4 +623,4 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
