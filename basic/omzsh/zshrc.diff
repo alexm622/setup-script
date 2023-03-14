@@ -6,7 +6,7 @@
 < ZSH_THEME="robbyrussell"
 ---
 > ZSH_THEME="passion"
-101a102,121
+101a102,118
 > 
 > alias cls="printf '\033c'"
 > alias sudo="doas"
@@ -24,6 +24,3 @@
 > source <(ng completion script)
 > 
 > 
-> #brightness
-> export BRIGHTNESS=30000
-> xbrightness $BRIGHTNESS

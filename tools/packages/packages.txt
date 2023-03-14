@@ -4,6 +4,7 @@ graphics/aalib
 editors/abiword
 devel/abseil
 sysutils/accountsservice
+databases/adminer
 x11-themes/adwaita-icon-theme
 x11/alacritty
 x11/albert
@@ -233,6 +234,7 @@ graphics/gpu-firmware-radeon-kmod
 graphics/graphene
 graphics/graphite2
 x11-themes/greybird-theme
+textproc/groff
 devel/grpc
 devel/gsettings-desktop-schemas
 textproc/gspell
@@ -250,6 +252,7 @@ devel/gvfs
 print/harfbuzz
 print/harfbuzz-icu
 misc/hicolor-icon-theme
+comms/hidapi
 devel/highway
 textproc/hunspell
 sysutils/hw-probe
@@ -331,6 +334,7 @@ devel/libevent
 graphics/libexif
 x11/libexo
 devel/libffi
+security/libfido2
 devel/libfmt
 x11-fonts/libfontenc
 security/libgcrypt
@@ -446,6 +450,8 @@ math/mpdecimal
 math/mpfr
 devel/msgpack-c
 math/muparser
+databases/mysql80-client
+databases/mysql80-server
 editors/nano
 devel/ncurses
 sysutils/neofetch
@@ -513,6 +519,9 @@ devel/pcre
 devel/pcre2
 devel/pcsc-lite
 lang/perl5.32
+lang/php81
+databases/php81-mysqli
+www/php81-session
 x11-wm/picom
 security/pinentry
 security/pinentry-curses

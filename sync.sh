@@ -3,8 +3,8 @@
 START=$(pwd)
 
 #xfce4
-cd xfce4/
-sh update_xconf.sh
+cd configs/
+sh update_all.sh
 
 cd $START
 

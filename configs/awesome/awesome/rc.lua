@@ -20,10 +20,11 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 do
   local cmds =
   {
-    "bash ~/.config/awesome/networkmgr.sh",
+    "bash /usr/home/alex/.config/awesome/networkmgr.sh",
     "xfce4-screensaver",
     "albert",
-    "picom --config ~/.config/picom/picom.conf"
+    "picom --config /usr/home/alex/.config/picom/picom.conf",
+    "keepassxc"
   }
 
   for _,i in pairs(cmds) do
@@ -131,7 +132,7 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget.textclock(" %a %b %d, %I:%M%P")
 
 -- Create the battery widget:
 local my_battery_widget = battery_widget {
