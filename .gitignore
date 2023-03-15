@@ -1,5 +1,7 @@
 #binaries
 *.tar.gz
 
-tabbed-0.7/
+tabbed-clean/
 tabbed/
+
+.ccls-cache/

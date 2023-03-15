@@ -1,3 +1,3 @@
-#!/usr/local/bin/sh
+#!/bin/sh
 
 diff zshrc.zsh-template ~/.zshrc > zshrc.diff
