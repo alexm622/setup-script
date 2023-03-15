@@ -1,5 +1,6 @@
 #!/bin/sh
 
+mkdir awesome
 
 #update awesomewm
 cd awesome
