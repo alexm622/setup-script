@@ -15,24 +15,6 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
--- startup apps
-
-do
-  local cmds =
-  {
-    "bash /usr/home/alex/.config/awesome/networkmgr.sh",
-    "xfce4-screensaver",
-    "albert",
-    "picom --config /usr/home/alex/.config/picom/picom.conf",
-    "keepassxc"
-  }
-
-  for _,i in pairs(cmds) do
-    awful.util.spawn(i)
-  end
-end
-
-
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -624,4 +606,5 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
+-- autostart programs
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")

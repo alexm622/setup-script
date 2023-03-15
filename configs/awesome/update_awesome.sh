@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-
 #update awesomewm
-mkdir awesome
+cd awesome
+rm *
 cp ~/.config/awesome/* ~/setup-script/configs/awesome/awesome/
