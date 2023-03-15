@@ -11,3 +11,6 @@ sh awesome/update_awesome.sh
 
 #picom
 sh picom/update.sh
+
+#nitrogen
+sh nitrogen/update.sh
