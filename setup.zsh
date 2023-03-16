@@ -64,21 +64,27 @@ fi
 
 #start installing stuff
 
-select opt in "sdk" "low_level" "basic" "xfce4" "tools" "all" "Quit"
+select opt in "sdk" "low_level" "basic" "configs" "tools" "services" "all" "Quit"
 do
 	case $opt in
 		"sdk")
 			echo sdk
+			#might want to just ignore this and install all 
 			bash -c "source sdks/install.bash; run";;
 		"low_level")
 			echo low level;;
 		"basic")
 			echo basic;;
-		"xfce4")
-			echo xfce4;;
-			#do something
+		"configs")
+			cd ./configs
+			sh ./install.sh
+			cd ..;;
 		"tools")
-			echo tools;;
+			cd ./tools
+			sh ./install.sh
+			cd ..;;
+		"services")
+			echo services;;
 		"all")
 			echo all
 			all ;;

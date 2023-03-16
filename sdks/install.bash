@@ -1,7 +1,7 @@
 #!/usr/local/bin/bash
 
 function run () {
-	select opt in "rust" "mvn" "R" "back"
+	select opt in "rust" "mvn" "R" "all" "back"
 	do
 	case $opt in
 		"rust")
@@ -13,6 +13,8 @@ function run () {
 		"R")
 			echo R
 			sh ./R.sh;;
+		"all")
+			all;;
 		*)
 			break;;
 		esac
