@@ -1,6 +1,6 @@
 #!/bin/sh
 
-exec nitrogen --restore
+nitrogen --restore
 
 #start networkmgr
 
@@ -10,16 +10,15 @@ val=$(ps -A | grep "/usr/local/bin/python3.9 /usr/local/bin/networkmgr" | wc -l)
 
 if [ $val == 1 ];
 then
-	networkmgr
+	networkmgr &
 fi
 
 #lock screen and xflock4
-xfce4-screensaver
+xfce4-screensaver &
 
 #albert
-albert
+albert &
 
 #picom
-picom --config /usr/home/alex/.config/picom/picom.conf
-
+picom --config /usr/home/alex/.config/picom/picom.conf &
 #keepassxc
