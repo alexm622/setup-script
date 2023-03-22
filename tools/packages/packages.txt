@@ -46,6 +46,7 @@ devel/cmake-doc
 devel/cmake-man
 graphics/colord
 sysutils/consolekit2
+sysutils/contractor
 print/cups
 ftp/curl
 security/cyrus-sasl2
@@ -64,6 +65,7 @@ devel/dotconf
 devel/double-conversion
 graphics/drm-510-kmod
 graphics/drm-kmod
+math/elementary-calculator
 textproc/enchant
 textproc/enchant2
 x11-fonts/encodings
@@ -114,6 +116,7 @@ x11-fonts/fontconfig
 graphics/freeglut
 print/freetype2
 converters/fribidi
+sysutils/fusefs-libs3
 devel/gamin
 sysutils/garcon
 lang/gcc
@@ -134,6 +137,8 @@ devel/gh
 print/ghostscript9-agpl-base
 graphics/giflib
 devel/git
+lang/gjs
+devel/glade
 devel/glib20
 net/glib-networking
 devel/glibmm
@@ -236,6 +241,7 @@ graphics/gpu-firmware-radeon-kmod
 graphics/gpu-firmware-radeon-kmod
 graphics/gpu-firmware-radeon-kmod
 graphics/gpu-firmware-radeon-kmod
+x11-toolkits/granite7
 graphics/graphene
 graphics/graphite2
 x11-themes/greybird-theme
@@ -265,6 +271,7 @@ x11-themes/gtk-murrine-engine
 graphics/gtk-update-icon-cache
 x11-toolkits/gtk20
 x11-toolkits/gtk30
+x11-toolkits/gtk40
 x11-toolkits/gtkmm24
 x11-toolkits/gtksourceview3
 devel/gvfs
@@ -364,6 +371,7 @@ devel/libfmt
 x11-fonts/libfontenc
 security/libgcrypt
 graphics/gd
+devel/libgee
 textproc/libgepub
 graphics/libglvnd
 security/libgpg-error
@@ -372,6 +380,7 @@ devel/libgsf
 devel/libgtop
 devel/libgudev
 devel/libgusb
+x11-toolkits/libhandy
 converters/libiconv
 audio/libid3tag
 dns/libidn
@@ -396,6 +405,7 @@ security/libotr3
 print/libpaper
 devel/libpci
 devel/libpciaccess
+deskutils/libportal
 net/libproxy
 dns/libpsl
 devel/libpthread-stubs
@@ -554,6 +564,7 @@ www/php81-session
 x11-wm/picom
 security/pinentry
 security/pinentry-curses
+multimedia/pipewire
 x11/pixman
 ports-mgmt/pkg
 devel/pkgconf
@@ -713,7 +724,9 @@ emulators/virtualbox-ose-kmod
 multimedia/vmaf
 x11-toolkits/vte3
 graphics/vulkan-headers
+graphics/vulkan-loader
 graphics/wayland
+graphics/wayland-protocols
 www/webkit2-gtk3
 graphics/webp
 audio/webrtc-audio-processing0
@@ -743,6 +756,7 @@ x11/xcmsdb
 x11/xconsole
 x11-themes/xcursor-themes
 x11/xcursorgen
+deskutils/xdg-desktop-portal
 devel/xdg-utils
 x11/xdotool
 x11/xdpyinfo

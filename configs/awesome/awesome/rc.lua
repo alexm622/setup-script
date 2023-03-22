@@ -349,6 +349,10 @@ end),
     awful.key({modkey, "Shift"}, "Print", function () awful.util.spawn("xfce4-screenshooter -f") end),
 
 
+    -- qutebrowser
+    awful.key( {modkey,}, "q", function () awful.util.spawn("qutebrowser") end),
+
+
     -- locking
     awful.key({modkey, }, "l", function () awful.util.spawn("xflock4") end),
 
