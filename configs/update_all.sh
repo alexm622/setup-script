@@ -14,3 +14,6 @@ sh picom/update.sh
 
 #nitrogen
 sh nitrogen/update.sh
+
+#qutebrowser
+sh qutebrowser/update.sh
