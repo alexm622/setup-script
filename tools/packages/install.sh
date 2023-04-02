@@ -1,4 +1,1 @@
-#!/usr/local/bin/sh
-
-
-cat install |  sudo pkg install
+sudo xargs pacman -S --needed --noconfirm < ./packages.txt
