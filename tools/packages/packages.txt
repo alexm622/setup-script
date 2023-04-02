@@ -1,3 +1,4 @@
+abiword
 alacritty
 archlinuxarm-keyring
 asahi-fwextract
@@ -10,6 +11,7 @@ base-devel
 dhcpcd
 firefox
 git
+github-cli
 grub
 iwd
 lightdm
@@ -17,14 +19,18 @@ lightdm-gtk-greeter
 linux-asahi
 m1n1
 nano
+nano-syntax-highlighting
+neovim
 net-tools
 netctl
 network-manager-applet
 networkmanager
 nitrogen
+nodejs
 opendoas
 openssh
 picom
+python-pip
 python-pyqt5
 qt5-3d
 qt5-base
@@ -76,6 +82,7 @@ which
 wpa_supplicant
 xf86-video-vesa
 xfce4-screensaver
+xfce4-screenshooter
 xfce4-session
 xorg-bdftopcf
 xorg-docs
@@ -118,4 +125,5 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xterm
+yarn
 zsh
