@@ -3,6 +3,7 @@
 pcall(require, "luarocks.loader")
 
 -- Standard awesome library
+local awesome = require("awesome")
 local gears = require("gears")
 local awful = require("awful")
 require("awful.autofocus")
@@ -612,3 +613,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- autostart programs
 awful.spawn.with_shell("/bin/sh ~/.config/awesome/autorun.sh")
+
+
