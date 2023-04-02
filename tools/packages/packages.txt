@@ -80,7 +80,9 @@ vi
 wget
 which
 wpa_supplicant
+xclip
 xf86-video-vesa
+xfce4-clipman-plugin
 xfce4-screensaver
 xfce4-screenshooter
 xfce4-session

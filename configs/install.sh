@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#xprofile
+cp .xprofile ~/.xprofile
+
 #xfce
 cp -r ./xfce4/xfconf ~/.config/xfce4/xfconf
 

@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#xprofile
+cp ~/.xprofile .
+
 # alacritty
 sh alacritty/copy_config.sh
 
