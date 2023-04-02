@@ -1,0 +1,6 @@
+#!/bin/sh
+
+nm-applet &
+picom &
+xfce4-screensaver &
+xfce4-clipman &
