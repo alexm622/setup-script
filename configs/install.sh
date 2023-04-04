@@ -4,16 +4,19 @@
 cp .xprofile ~/.xprofile
 
 #xfce
-cp -r ./xfce4/xfconf ~/.config/xfce4/xfconf
+cp -r ./xfce4/xfconf ~/.config/xfce4/
 
 #nitrogen
-cp -r ./nitrogen/nitrogen ~/.config/nitrogen
+cp -r ./nitrogen/nitrogen ~/.config/
 
 #alacritty
-cp -r ./alacritty/alacritty ~/.config/alacritty
+cp -r ./alacritty/alacritty ~/.config/
 
 #awesome
-cp -r ./awesome/awesome ~/.config/awesome
+cp -r ./awesome/awesome ~/.config/
 
 #picom
-cp -r ./picom/picom ~/.config/picom
+cp -r ./picom/picom ~/.config/
+
+#nvim
+cp -r ./neovim/neovim-settings
