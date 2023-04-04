@@ -5,3 +5,5 @@ tabbed-clean/
 tabbed/
 
 .ccls-cache/
+
+*.md.backup

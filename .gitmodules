@@ -7,3 +7,6 @@
 [submodule "configs/awesome/awesome/lain"]
 	path = configs/awesome/awesome/lain
 	url = https://github.com/lcpz/lain.git
+[submodule "configs/neovim/nvim"]
+	path = configs/neovim/nvim
+	url = https://github.com/alexm622/nvim-settings
