@@ -19,4 +19,4 @@ cp -r ./awesome/awesome ~/.config/
 cp -r ./picom/picom ~/.config/
 
 #nvim
-cp -r ./neovim/neovim-settings
+cp -r ./neovim/nvim ~/.config/
