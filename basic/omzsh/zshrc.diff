@@ -6,7 +6,20 @@
 < ZSH_THEME="robbyrussell"
 ---
 > ZSH_THEME="passion"
-101a102,118
+73c73,77
+< plugins=(git)
+---
+> plugins=(
+> zsh-autosuggestions
+> zsh-syntax-highlighting
+> git
+> )
+82c86,87
+< # export LANG=en_US.UTF-8
+---
+> export LANG=en_US.UTF-8
+> export LC_ALL=en_US.UTF-8
+101a107,123
 > 
 > alias cls="printf '\033c'"
 > alias sudo="doas"
@@ -21,6 +34,6 @@
 > 
 > 
 > # Load Angular CLI autocompletion.
-> source <(ng completion script)
+> #source <(ng completion script)
 > 
 > 
